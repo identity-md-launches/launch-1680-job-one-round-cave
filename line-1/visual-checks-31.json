@@ -1,0 +1,27 @@
+{
+  "ancestor_sha256": "074a292084bbcd48729e4644c4cc309a5d9dfb8ae43906fd8d4db18a31632163",
+  "wall_sha256": "4632ab402b4eeec7c8ff6fa7cbaa4a8ac55f2853f74da80f711d57a1ea61bdae",
+  "wall": {
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG",
+    "mode": "RGB",
+    "bytes": 3974228
+  },
+  "jpeg": {
+    "width": 512,
+    "height": 512,
+    "format": "JPEG",
+    "bytes": 55470
+  },
+  "addition_box": [
+    670,
+    295,
+    815,
+    385
+  ],
+  "changed_pixels_inside": 2741,
+  "changed_pixels_outside": 0,
+  "method": "Small deterministic dry-brush bundle and seal overlay on hash-verified ancestor rock",
+  "unmet_visual_requirements": []
+}

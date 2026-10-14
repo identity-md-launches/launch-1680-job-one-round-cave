@@ -91,6 +91,23 @@ class HandoffTests(unittest.TestCase):
             self.assertEqual(h.main(['--verify-evidence', str(h.HERE / 'demo-handoff.json')]), 1)
         self.assertIn('error', json.loads(error.getvalue()))
 
+    def test_cli_can_save_only_a_newly_reviewed_handoff(self):
+        with patch.object(h.review.sizes.path, 'save_json') as save_json:
+            with contextlib.redirect_stdout(io.StringIO()) as output:
+                self.assertEqual(h.main(['--demo', '--amount', '100000000',
+                                         '--save', 'test/scratch/handoff.json']), 0)
+        saved_path, saved_value = save_json.call_args.args
+        self.assertEqual(saved_path, 'test/scratch/handoff.json')
+        self.assertEqual(saved_value['status'], 'ready_for_human_review')
+        self.assertEqual(json.loads(output.getvalue())['handoff_sha256'],
+                         saved_value['handoff_sha256'])
+
+    def test_cli_refuses_save_on_a_verification_result(self):
+        with contextlib.redirect_stderr(io.StringIO()) as error:
+            self.assertEqual(h.main(['--verify', str(h.HERE / 'demo-handoff.json'),
+                                     '--save', 'test/scratch/verification.json']), 1)
+        self.assertIn('--save is available only', json.loads(error.getvalue())['error'])
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -168,11 +168,15 @@ def main(argv=None):
     parser.add_argument('--report', help='ZTO Sizes report JSON inside this workspace')
     parser.add_argument('--amount',
                         help='one exact decimal candidate amount from the reviewed policy')
+    parser.add_argument('--save',
+                        help='write a newly made handoff JSON inside this workspace')
     args = parser.parse_args(argv)
     try:
         if args.verify and args.verify_evidence:
             raise ValueError('--verify and --verify-evidence are alternatives')
         if args.verify or args.verify_evidence:
+            if args.save:
+                raise ValueError('--save is available only when making a handoff')
             if args.amount:
                 raise ValueError('--verify cannot be combined with handoff inputs')
             handoff_file = args.verify or args.verify_evidence
@@ -213,6 +217,11 @@ def main(argv=None):
         if not args.verify and not args.verify_evidence:
             result = handoff(review.read_json(snapshot_file), review.read_json(report_file),
                              review.read_json(policy_file), args.amount, selected_mode)
+            if args.save:
+                # The inherited writer enforces the workspace boundary and a
+                # 100 KB size limit.  This makes a reviewable artifact, never
+                # a transaction or a request to an external service.
+                review.sizes.path.save_json(args.save, result)
         print(json.dumps(result, indent=2, allow_nan=False))
         return 0
     except (ValueError, KeyError, TypeError, AttributeError, OSError, OverflowError,

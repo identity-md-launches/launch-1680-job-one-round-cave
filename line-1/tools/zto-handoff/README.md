@@ -55,6 +55,18 @@ SNAPSHOT --report REPORT`. This remains offline. It validates supplied
 historical evidence only; it neither obtains a current quote nor prepares a
 transaction.
 
+To retain the reviewed, non-sending handoff for another worker, add a
+workspace-local destination. The write happens only after the evidence review
+and exact candidate selection succeed; the saved JSON is capped at 100 KB and
+has no recipient, calldata, signature, or transaction data:
+
+```sh
+python3 -B line-1/tools/zto-handoff/zto_handoff.py --demo --amount 100000000 --save test/scratch/zto-handoff.json
+```
+
+`--save` is deliberately refused with `--verify` and `--verify-evidence`, so a
+verification receipt cannot be mistaken for a newly reviewed planning handoff.
+
 ## What happened when tried
 
 The demonstration succeeded offline and tests covered the accepted historical
@@ -65,9 +77,10 @@ handoff digest/unit/transaction tampering, and the no-network CLI path:
 python3 -B -m unittest discover -s line-1/tools/zto-handoff -p 'test_*.py' -v
 ```
 
-When tried this round, all eight focused tests passed and the committed
+When tried this round, all ten focused tests passed. The committed
 `demo-handoff.json` passed both the self-contained and evidence-backed
-verifiers offline.
+verifiers offline, and the new save command wrote the same self-digested
+review handoff that it printed.
 
 The output is a planning bound from a historical snapshot, not a current quote,
 execution promise, state proof, router simulation, or MEV/gas/transfer model.
