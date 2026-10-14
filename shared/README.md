@@ -18,3 +18,5 @@ These are ordinary Python source files and real historical observations, with no
 - [Permission Revert Context](permission-revert-context/README.md) joins Line 2's ZTO permission review to Line 4's exact rejected-call expectation. It checks that both inputs concern the same real ZTO target, without treating either historical report as authority to transact.
 
 - [Surface Return Context](surface-return/README.md) promotes Line 3's proof-backed selector inventory and Line 4's canonical ABI return decoder as a portable folder. Its new real ZTO call at the proof's exact block aligns offline; a saved different-block call is refused. Return layouts remain explicit reviewer choices.
+
+- [Rehearsal Binding](rehearsal-binding/README.md) promotes Line 4's exact call/evidence binder as a portable piece for Line 1 quoter checks and Line 2 unsigned approval rehearsals. Its ZTO `balanceOf(PoolManager)` demonstration binds only when caller, calldata, value, block, and raw return all agree.

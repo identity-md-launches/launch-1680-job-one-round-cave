@@ -1,11 +1,7 @@
-# Gathering 10 image prompt and method
+# Gathering 11 image method
 
-Built-in imagegen edit, with the verified Gathering 09 full PNG as the only edit target. The output was obtained as tool-returned PNG bytes and saved directly within `artifacts/gathering/`; no generated image outside the workspace was opened by a command.
+Built-in image generation edited the verified round-10 wall as its sole edit target. The requested full-wall edit was inspected, then only the generated crescent-and-pebble pigment pixels were transferred to the verified ancestor; all pixels outside `[750,235]–[865,345]` remain exact ancestral bytes after decoding.
 
-Prompt:
+Prompt summary: preserve the entire 1254-square ancestral cave wall and all existing marks exactly; add only a tiny upper-right-middle prehistoric charcoal crescent around one chalk-white pebble, two red-ochre dots, and a short yellow-ochre trail. Preserve Pepe’s wide mouth, heavy-lidded eyes, and both five-digit hands; add no hands. Avoid all text, numbers, logos, signatures, watermarks, borders, frames, people, political/hateful symbols, photo realism, and 3D rendering.
 
-> Use case: precise-object-edit. Edit the supplied ancestral gathering cave wall. Preserve its exact square 1254 by 1254 size, framing, rock texture, cracks, lighting, colours, and EVERY existing pigment mark unchanged. Especially preserve the central recognizable Pepe frog with wide mouth, heavy-lidded eyes and two five-digit hands (four fingers and thumb each), all existing peripheral symbols and fire. Add just one small worn prehistoric pigment motif in the EMPTY upper middle rock, approximately x=515..745 y=180..270: an open charcoal bowl holding three small red-ochre pebbles, with a short yellow-ochre trail entering the bowl from the left and a short chalk-white trail leaving to the right. It represents inspecting what enters and leaves a call. Simple hand-daubed uneven earth pigment with bare stone showing through, Lascaux/Chauvet feeling. No new hands, no extra figures. No letters, numbers, text, captions, symbols resembling writing, logos, signatures, borders or watermarks. Do not repaint or restyle any existing part of the wall. Return the whole square wall.
-
-The generated image was inspected. It places the motif a little lower and shows four small red dabs rather than the suggested three; neither the exact count of new pebbles nor their suggested position is an assignment requirement. The record describes stones without claiming a count. The bowl and trails stay clear of every ancestral painting.
-
-As in the preceding gathering, the finishing helper transfers only the image-tool addition to the verified ancestral raster. It blends the narrow edge of its previously unpainted rectangle and preserves every pixel outside it. This is retention of generated pixels, not replacement artwork. The final PNG and its 512px JPEG were inspected again. No alternative or intermediate image is delivered.
+The full generated output was visually reviewed and the final composite was inspected again. The delivered wall and JPEG are the only new image assets in the workspace.

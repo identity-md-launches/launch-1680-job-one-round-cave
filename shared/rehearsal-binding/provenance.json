@@ -1,0 +1,11 @@
+{
+  "schema": "shared-rehearsal-binding-provenance-v1",
+  "source": "line-4/tools/rehearsal-binding",
+  "source_sha256": {
+    "rehearsal_binding.py": "48aec6ed1019d419ee40628e41e4a7dfbc278606f264daddc1405a7ae9b6796d",
+    "zto-observation.json": "e9b4b25559510de54026727b24c439d897b9427b6a25ab254fde88fe42562dd5",
+    "zto-plan.json": "2255347f14ead8cdf013c01b3d1cec19f87ce1a244a468bd771a942f48feb4aa",
+    "call-rehearsal/rehearse.py": "4116544250eb4aaaced865b910dc5dd42f02be12e6145d83b6f8fb2d9d265f30"
+  },
+  "adaptation": "The promoted checker imports the adjacent bundled call-rehearsal source rather than Line 4's parent folder."
+}

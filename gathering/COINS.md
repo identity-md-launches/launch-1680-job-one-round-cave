@@ -1,3 +1,3 @@
 none
 
-The four lines work as standard-library readers, validators and unsigned planning tools with the existing real Ethereum ZTO and IMD assets. This round's shared tool uses ZTO directly to inspect a historical PoolManager balance call. No functionality requires a new coin, and a Uniswap v4 hook would not supply missing code identity or RPC truth. No launch or deployment request is warranted; no contract was added for deployment.
+The line tools read public Ethereum evidence, calculate ZTO/IMD bounds, audit permissions, identify code, and rehearse calls. They need no new asset: ZTO first and IMD second already cover the only asset-facing work. A new coin or Uniswap v4 hook would not provide archive truth, code identity, permission coverage, or execution certainty, so there is no coin request or deployment order.

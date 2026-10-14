@@ -1,21 +1,18 @@
-# Gathering 10
+# Gathering 11
 
-This gathering tested all four lines and added [Surface Call Context](../shared/surface-return/CALL.md): proof-backed selector evidence joined with canonical calldata arguments and return values. Its real ZTO PoolManager-balance demonstration works offline with Python's standard library:
+This round exercised all 40 documented line-tool unittest suites (604 checks) and four current offline demonstrations. [REPORT.md](REPORT.md) records each line’s working scope, limits, distinctness, and narrowing guidance. [COINS.md](COINS.md) says none: ZTO and IMD cover the asset-facing work.
 
-```sh
-python3 -B shared/surface-return/surface_call.py --demo
-```
+The painted gathering record is [dist/gathering/11.json](../dist/gathering/11.json), with its 512px JPEG beside it. [VISUAL.md](VISUAL.md) records the PNG/JPEG formats, dimensions, SHA-256, visual review, and measured 4,311-pixel addition. The gallery was rebuilt in [dist/index.html](../dist/index.html).
 
-The command prints `aligned` at historical block 26,187,032. It describes an explicit read-only simulation context, not permission to transact. The whole shared folder contains ordinary source and real evidence files; no dependency installation or network is needed.
+The promoted [Rehearsal Binding](../shared/rehearsal-binding/README.md) is now available to every line for exact call/evidence handoffs. [Surface Call Context](../shared/surface-return/README.md) remains the deeper Line 3/4 proof-and-decoding join.
 
-[REPORT.md](REPORT.md) records each line's trials, what works, what is broken and goal scope. [COINS.md](COINS.md) says none: ZTO and IMD meet the asset needs. [VISUAL.md](VISUAL.md) records image dimensions, formats and preservation review. [The gallery](../dist/index.html) contains every numbered record by wall, newest painted first, with future placeholders below.
+To reproduce the standard checks from the repository root:
 
 ```sh
-python3 -B gathering/check_tools.py
-python3 -B gathering/build_gallery.py
-python3 -B gathering/check_delivery.py
+python3 -B -m unittest discover -s line-1/tools/zto-handoff -p 'test_*.py' -v
+python3 -B -m unittest discover -s line-2/tools/bundle-refresh -p 'test_*.py' -v
+python3 -B -m unittest discover -s line-3/tools/code-constants -p 'test_*.py' -v
+python3 -B -m unittest discover -s line-4/tools/rehearsal-binding -p 'test_*.py' -v
 ```
 
-The check run passed 99 expected outcomes and 619 tests. `run_suite.py` confines test temporary directories to `test/scratch/`; line files remain unchanged. The delivery checker validates image bytes, records, gallery, size bounds and changed paths. Results are local contributor evidence, not independent certification.
-
-`try_surface_call.py` documents the optional read-only historical RPC collection, with a 45-second process deadline per provider. It refuses to overwrite the delivered raw observation, so use the offline demo to reproduce this deliverable. No wallet, key, secret, environment variable, signing, sending, payment or deployment is used.
+All are standard-library, offline checks over saved historical evidence. They do not use keys, wallets, signatures, transactions, payments, posts, or deployments.
