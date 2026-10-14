@@ -1,0 +1,35 @@
+{
+  "ancestor_sha256": "f9fb23e6a56d33d5189094174702447005276b4552c8a011976bfde0cea22951",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "format": "PNG",
+  "color": "opaque RGB",
+  "new_mark_rectangle": [
+    280,
+    205,
+    450,
+    325
+  ],
+  "changed_pixels": 19705,
+  "changed_pixels_outside_rectangle": 0,
+  "wall_sha256": "50a0685d56f48b05b4a2b202ebcc92a90c038cb6cd6f05e0e20f86f81dc41ee3",
+  "wall_bytes": 4025494,
+  "thumbnail_dimensions": [
+    512,
+    512
+  ],
+  "thumbnail_format": "JPEG",
+  "thumbnail_bytes": 59959,
+  "thumbnail_sha256": "bf4f4ec3920c5905e00c1f88f51f0320cae99d982451089b728eb665331b3ebf",
+  "visual_review": {
+    "pepe": "Inherited wide mouth and heavy-lidded eyes unchanged",
+    "new_hand_count": 0,
+    "clearly_spread_pepe_hand_digits": 5,
+    "writing_or_disallowed_symbols_added": false,
+    "unmet_requirements": [
+      "Inherited tiny trail marks resemble three-pronged prints and cannot be certified as five-digit hand stencils. They were retained pixel-exactly rather than redrawn."
+    ]
+  }
+}

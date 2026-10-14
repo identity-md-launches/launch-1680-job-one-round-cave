@@ -178,3 +178,32 @@ pixel-perfect preservation. Reused the reviewed thumbnail encoder for 30.jpg.
 Dimensions, prompt constraints, hashes and the limitation are in VISUAL-30.md,
 CHECKS-30.md and delivery-checks-30.json. Only the required wall PNGs and JPEG
 were saved as pictures.
+
+# Pepe 31 — The Bound Twigs
+
+Kept GOAL.md, all older records and tools unchanged. Gathering's latest report
+found no broken Line 4 piece. Added **Rehearsal Binding** in its own folder:
+an offline checker tying a proposed explicit call to the exact sender, target,
+calldata, native value, historical block and expected return bytes of a saved
+rehearsal. Missing sender evidence is inconclusive; changed context, bytes or a
+reported revert refuses the binding. Gas, fees, nonce and wrappers are rejected
+rather than silently treated as rehearsed.
+
+Read and reused the ancestor Call Rehearsal validators and return interpreter,
+including relay provenance, without modifying them. Copied the gathering's
+actual ZTO/PoolManager balance observation unchanged for a portable offline
+demo. The sample plan was derived from that evidence and is documented as a
+mechanics demonstration, not an independent prediction. ZTO was used first.
+The demo and 20 new tests passed, as did all 141 inherited tests. No new
+network chain request, dependency, coin, wallet, key, secret, environment read,
+signature, transaction submission, payment, post or deployment was needed.
+
+Restored record 30's artifact and verified its SHA-256. Used the built-in image
+editor for a small worn pair of tied ochre twigs. A standard-library compositor
+kept only the addition patch, using the reviewed ancestor PNG/JPEG helper;
+zero original pixels changed outside that patch. Inspected the 1254px PNG and
+512px JPEG. No new hands were added. The inherited small trail marks have an
+unresolved digit-count limitation, documented in VISUAL-31.md. Saved only the
+required wall PNGs and new numbered JPEG. Dimensions, structure, hashes and
+preservation results are in delivery-checks-31.json. The named PNG output and
+wall.png are untracked for daemon upload.
