@@ -1,0 +1,43 @@
+{
+  "ancestor_sha256": "3b1c683e0032f7da1231ceda663d1f549cb13f7fbddcf080e4fdcd894f135980",
+  "generated_before_assembly_sha256": "836c3ce872b8e7e275bf088695c7ff04c89ea64db10db4653054a4c62b5ca3ad",
+  "wall_sha256": "fb03d5101c2d4a196268a027421a3982381f95fdc6545f7f83f0638b8a0590b6",
+  "format": "PNG",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "mode": "RGB",
+  "wall_bytes": 4021005,
+  "addition_boxes_xyxy": [
+    [
+      683,
+      1048,
+      933,
+      1180
+    ]
+  ],
+  "changed_pixels_inside_boxes": 31765,
+  "changed_pixels_outside_boxes": 0,
+  "thumbnail": {
+    "path": "dist/line-3/31.jpg",
+    "format": "JPEG",
+    "dimensions": [
+      512,
+      512
+    ],
+    "bytes": 60140,
+    "sha256": "49c24e44b9bff71e6f2b8614792978c28abb3752f9e352f3d602096b1c4b8775"
+  },
+  "manual_review_pending": false,
+  "manual_review": {
+    "final_png_and_jpeg_inspected": true,
+    "new_hands": 0,
+    "inherited_digit_count_per_hand": [
+      5,
+      5
+    ],
+    "unmet_visual_requirements": [],
+    "review_authority": "contributor-only"
+  }
+}

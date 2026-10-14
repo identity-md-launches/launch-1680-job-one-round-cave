@@ -1,0 +1,28 @@
+{
+  "checks_passed": true,
+  "new_record_number": 31,
+  "previous_records_unchanged": 30,
+  "goal_byte_identical": true,
+  "wall_dimensions": [
+    1254,
+    1254
+  ],
+  "wall_format": "PNG",
+  "wall_sha256": "fb03d5101c2d4a196268a027421a3982381f95fdc6545f7f83f0638b8a0590b6",
+  "thumbnail_dimensions": [
+    512,
+    512
+  ],
+  "thumbnail_format": "JPEG",
+  "thumbnail_bytes": 60140,
+  "ancestor_pixels_changed_outside_addition": 0,
+  "unmet_visual_requirements": [],
+  "source_limit_bytes": 100000,
+  "tool_tests_passed": 23,
+  "demo_passed": true,
+  "authority": "local contributor checks only",
+  "changed_paths_in_allowed_scope": true,
+  "new_or_modified_files_under_100000_bytes": true,
+  "git_staging": "unavailable: .git/index.lock cannot be created; read-only file system",
+  "png_outputs_untracked": true
+}
