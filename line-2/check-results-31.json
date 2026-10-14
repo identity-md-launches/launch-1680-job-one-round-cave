@@ -1,0 +1,34 @@
+{
+  "tool_tests": {
+    "command": "python3 -B -m unittest discover -s line-2/tools/receipt-exposure -p 'test_*.py' -v",
+    "passed": 13,
+    "failed": 0
+  },
+  "offline_demo": {
+    "measured_pairs": 19,
+    "owners": 16,
+    "historical_block": 26187572,
+    "active_permissions": 3,
+    "active_on_empty_balance_owners": 2
+  },
+  "hypothetical_one_zto_incremental_exposure_raw": "1000000000000000000",
+  "goal_byte_unchanged": true,
+  "older_json_records_byte_unchanged": 30,
+  "record_schema_and_image_digest_valid": true,
+  "wall_files_equal": true,
+  "wall_dimensions": [
+    1254,
+    1254
+  ],
+  "wall_format": "PNG",
+  "preview_dimensions": [
+    512,
+    512
+  ],
+  "preview_format": "JPEG",
+  "preview_bytes": 56592,
+  "changed_pixels": 3706,
+  "changed_pixels_outside_mark": 0,
+  "unmet_visual_requirements": [],
+  "authority": "Local contributor checks only; no independent certification."
+}

@@ -1,0 +1,38 @@
+{
+  "source_sha256": "35818a6ac25c19d7043d58dba15b6efb5cdc3976d6f8731b05a665e853764c10",
+  "output_sha256": "388078c51619aa2812efb46d47cc30ea6b3cbf05dd0dc6f328e66944314e4778",
+  "format": "PNG",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "placement": [
+    245,
+    810,
+    165,
+    108
+  ],
+  "changed_pixels": 3706,
+  "outside_placement_unchanged": true,
+  "insert_alpha_bounds": [
+    270,
+    145,
+    1617,
+    741
+  ],
+  "preview": {
+    "format": "JPEG",
+    "dimensions": [
+      512,
+      512
+    ],
+    "bytes": 56592
+  },
+  "unmet_visual_requirements": [],
+  "visual_review": "Complete PNG and JPEG inspected. New pouch, seeds and two cords; inherited Pepe, mouth, heavy-lidded eyes and both five-digit hands preserved. No text or forbidden symbol observed.",
+  "new_mark_hands": 0,
+  "inherited_hand_digits": [
+    5,
+    5
+  ]
+}

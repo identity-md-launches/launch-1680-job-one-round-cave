@@ -1,0 +1,11 @@
+{
+  "schema": "permission-hypothetical-receipts-v1",
+  "chain_id": 1,
+  "token_address": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+  "receipts": [
+    {
+      "owner": "0x632ee80c099662ee9880d04a307401de195dabf8",
+      "amount_raw": "1000000000000000000"
+    }
+  ]
+}
